@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CampusConnect – Course Search</title>
+  <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+  
+<header>
+  <div class="header-wrap">
+    <div class="brand">CampusConnect</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Login</a>
+      <a href="#">Help</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="main">
+    <h1 style="color:var(--blue);">Course Search</h1>
+
+    <div class="section">
+      <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:10px; justify-content:center;">
+        <input id="qDept" placeholder="Department (e.g., INFO, CSCI)">
+        <input id="qNum" placeholder="Course # (e.g., 361)">
+        <input id="qInstr" placeholder="Instructor (e.g., Lee)">
+        <button id="btnSearch" class="btn-blue">Search</button>
+        <button id="btnReset" class="btn-warning">Reset</button>
+        <span id="info" class="muted" style="min-width:80px;"></span>
+      </div>
+      <div id="resultsBox" style="display:none">      <table>
+        <thead>
+          <tr>
+            <th>Dept</th><th>#</th><th>Title</th><th>Instructor</th><th>Credits</th><th>Seats</th><th></th>
+          </tr>
+        </thead>
+        <tbody id="results"></tbody>
+      </table>      </div>
+    </div>
+  </main>
+  <footer>CampusConnect</footer>
+  <script src="data.js"></script>
+  <script src="search.js"></script>
+</body>
+</html>

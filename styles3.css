@@ -1,0 +1,69 @@
+
+:root{
+  --bg: #EBEBEB;
+  --header: #1E3A8A;
+  --ink: #111827;
+  --muted: #374151;
+  --card: #FFFFFF;
+  --border: #D1D5DB;
+  --blue: #1E3A8A;
+  --warning: #F59E0B;
+  --cancel: #DE0000;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; font-family: Arial, sans-serif;
+  background:var(--bg); color:var(--ink);
+}
+
+/* Banner header like the screenshot */
+header{
+  background:var(--header); color:#fff; padding:14px 20px;
+}
+.header-wrap{
+  max-width:1100px; margin:0 auto;
+  display:flex; align-items:center; justify-content:space-between;
+}
+.brand{font-weight:700; letter-spacing:.3px}
+nav a{
+  color:#fff; text-decoration:none; margin-left:20px; /* no borders */
+}
+nav a:hover{ text-decoration:underline }
+
+.main{max-width:1100px; margin:24px auto; padding:0 16px; text-align:center}
+
+/* Sections and cards – square */
+.section{
+  background:#fff; border:1px solid var(--border);
+  padding:20px; margin:18px auto; max-width:900px;
+  border-radius:0; box-shadow:none;
+}
+
+/* Menu buttons – square */
+.menu-button{
+  width:100%; background:#fff; color:var(--blue);
+  border:1px solid #ccc; padding:16px; border-radius:0;
+  text-align:left; font-size:1em; cursor:pointer;
+}
+.menu-button h2{margin:0; font-size:1.1em}
+.menu-button p{margin:8px 0 0; font-size:.95em; color:#000}
+
+/* Inputs and buttons – sharp squares */
+input, select, button{
+  font:inherit; padding:10px 12px; border-radius: 8px;
+  border:1px solid var(--border); background:#fff; outline:none;
+}
+button{cursor:pointer; color:#fff; border:none; font-weight:600}
+.btn-blue{ background:var(--blue) }     /* Details button */
+.btn-warning{ background:var(--warning); color:#111 }
+.btn-cancel{ background:var(--cancel) }
+
+table{width:100%; border-collapse:collapse; margin-top:12px}
+th, td{padding:10px 12px; border:1px solid var(--border); text-align:left}
+th{background:#F3F4F6; font-weight:700}
+.muted{color:var(--muted)}
+.details{font-size:.95rem; background:#F9FAFB; border:1px dashed var(--border); padding:10px; margin-top:10px}
+
+footer{color:var(--muted); text-align:center; padding:22px 0; font-size:.9rem}
